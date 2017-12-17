@@ -10,7 +10,7 @@ class RouteBuilder
     result = gmaps.directions(@from, @to, mode: 'driving', alternatives: false)
     main_leg = result.first[:legs].first
     {
-      minutes: main_leg.dig(:distance, :value).to_f / 1000,
+      minutes: (main_leg.dig(:distance, :value).to_f / 1000).to_i,
       distance: main_leg.dig(:duration, :value).to_f / 60
     }
   end

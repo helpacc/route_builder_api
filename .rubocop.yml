@@ -1,0 +1,6 @@
+Style/SymbolArray:
+  MinSize: 4
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/app_spec.rb
