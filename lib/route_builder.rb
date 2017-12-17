@@ -1,3 +1,4 @@
+# Sends requests to Google API to calculate trip distance and time
 class RouteBuilder
   def initialize(from_lat:, from_long:, to_lat:, to_long:)
     @from = { lat: from_lat, lng: from_long }
